@@ -1,14 +1,7 @@
 cmake_minimum_required(VERSION 3.3)
 
 project(learnOpenGL CXX)
-add_executable(out main.cpp)
+add_executable(hello_triangle hello_triangle.cpp)
 
-#find_package(glfw3 REQUIRED)
-target_link_libraries(out glfw)
-
-#find_package(GLEW REQUIRED)
-target_link_libraries(out GLEW)
-
-#find_package(OpenGL REQUIRED)
-target_link_libraries(out OpenGL)
+target_link_libraries(hello_triangle glfw GLEW OpenGL)
 
